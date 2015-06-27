@@ -28,7 +28,7 @@ class LocalesServiceProvider extends ServiceProvider
         });
 
         $this->app->bind(Contracts\Locale::class, function ($app) {
-            return $app['locales']->locale();
+            return $app['locales']->active();
         });
 
         // Register a separate console commands provider as deferred
