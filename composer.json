@@ -1,9 +1,26 @@
 {
     "name": "rkgrep/locales",
+    "description": "Locale management package for Laravel.",
+    "keywords": ["laravel", "languages", "locales"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/rkgrep/laravel-locales/issues",
+        "source": "https://github.com/rkgrep/laravel-locales"
+    },
     "autoload": {
         "psr-4": {
             "rkgrep\\Locales\\": "src/"
         }
+    },
+    "authors": [
+        {
+            "name": "Roman Kinyakin",
+            "email": "1@grep.su"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*"
@@ -12,5 +29,8 @@
         "psr-4": {
             "rkgrep\\Locales\\Tests\\": "tests/"
         }
+    },
+    "suggest": {
+        "illuminate/database": "Required to use Database and Eloquent locale drivers (5.1.*)."
     }
 }
