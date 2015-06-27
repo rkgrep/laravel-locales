@@ -1,0 +1,16 @@
+{
+    "name": "rkgrep/locales",
+    "autoload": {
+        "psr-4": {
+            "rkgrep\\Locales\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "rkgrep\\Locales\\Tests\\": "tests/"
+        }
+    }
+}
