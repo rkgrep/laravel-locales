@@ -55,14 +55,14 @@ class ConfigLocaleDriver implements Driver
      * Retrieve list of locale codes or names keyed by codes.
      *
      * @param  name
-     * @return mixed
+     * @return array
      */
     public function getList($name = null)
     {
         $list = $this->config->get('locales.list', []);
         $codes = array_keys($list);
         if ($name) {
-            array_combine(array_keys($list), array_pluck($list, $name));
+            return array_combine($codes, array_pluck($list, $name));
         }
         else {
             return array_combine($codes, $codes);
